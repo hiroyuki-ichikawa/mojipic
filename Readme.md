@@ -1,5 +1,5 @@
 # アプリ名 もじ>ピク  
-　Chrome/Safari対応  
+　Chrome/Safari/IE対応  
 
 # 内容  
 　特定の文章を、画像ファイル一覧を使い画面内に  
