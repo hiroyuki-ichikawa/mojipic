@@ -129,14 +129,15 @@ function draw_mozi(){
 
 			    $(str).css({
 			        backgroundImage: str2,
+			        backgroundRepeat: "no-repeat",
 			        backgroundSize: 'Contain'
 			    });	
 
 			    // クリックした画像を拡大表示
-				$(str).click(function(){
-					location.href = "./img/" + rand + ".jpg";
-				});
-
+				$( str ).on('click', { value: rand }, onClick);
+				function onClick(e) {
+					location.href = "./img/" + e.data.value + ".jpg";
+				}
 			}
 			$(str).offset({top: h_size * iy, left: w_size * ix});
 			$(str).css('width', sw_size);
